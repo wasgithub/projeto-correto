@@ -1,0 +1,19 @@
+
+<nb-card>
+  <nb-card-header>
+    Cadastro de Clientes
+  </nb-card-header>
+    <nb-card-body>
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search for...">
+        <span class="input-group-append">
+          <button class="btn btn-primary input-group-text">
+            Search
+          </button>
+        </span>
+      </div>
+      <br>    
+      <ng2-smart-table [settings]="settings" [source]="source" (deleteConfirm)="onDeleteConfirm($event)">
+      </ng2-smart-table>
+  </nb-card-body>
+</nb-card>
