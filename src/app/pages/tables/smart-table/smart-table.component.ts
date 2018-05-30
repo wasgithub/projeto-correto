@@ -37,28 +37,28 @@ export class SmartTableComponent {
     },
 
     columns: {
-      id: {
-        title: 'ID',
-        type: 'number',
-      },
-      firstName: {
-        title: 'First Name',
+      corretor: {
+        title: 'Corretor',
         type: 'string',
       },
-      lastName: {
-        title: 'Last Name',
+      dataCadastro: {
+        title: 'Dt.Cadastro',
         type: 'string',
       },
-      username: {
-        title: 'Username',
+      cliente: {
+        title: 'Cliente',
         type: 'string',
       },
-      email: {
-        title: 'E-mail',
+      cpfCnpj: {
+        title: 'CPF/CNPJ',
         type: 'string',
       },
-      age: {
-        title: 'Age',
+      estado: {
+        title: 'Estado',
+        type: 'string',
+      },
+      cidade: {
+        title: 'Cidade',
         type: 'number',
       },
     },
