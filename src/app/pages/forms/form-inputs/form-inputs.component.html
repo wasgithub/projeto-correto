@@ -92,8 +92,11 @@
         <button type="submit" class="btn btn-primary">Incluir</button>
       </nb-card-body>
     </nb-card>    
+  </div>
+</div>
 
-    <nb-card class="col-sm-6">
+<div class="row">
+    <nb-card class="col-md-6">
       <nb-card-header>Carteira do Cliente</nb-card-header>
       <nb-card-body>
         <table class="table">
@@ -151,152 +154,84 @@
               </td>
               <td>250</td>
             </tr>
+            <tr>
+              <td>Total</td>
+              <td></td>
+              <td></td>
+              <td>550</td>
+            </tr>
           </tbody>
         </table>
       </nb-card-body>
     </nb-card>
-    
-    <!-- 
-    <nb-card>
-      <nb-card-header>Selects</nb-card-header>
+
+    <nb-card class="col-sm-6">
+      <nb-card-header>Simulação</nb-card-header>
       <nb-card-body>
-        <div class="form-group">
-          <label>Simple Select</label>
-          <select class="form-control">
-            <option>Minsk</option>
-            <option>Gomel</option>
-            <option>Brest</option>
-            <option>Grodno</option>
-            <option>Mogilev</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label>Multiple Select</label>
-          <select multiple class="form-control">
-            <option>Item 1</option>
-            <option>Item 2</option>
-            <option>Item 3</option>
-            <option>Item 4</option>
-            <option>Item 5</option>
-          </select>
-        </div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Ativo</th>
+              <th>Qtd.</th>
+              <th>Preço Atual</th>
+              <th>Valor</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="ativo">
+                <select class="form-control">
+                  <option>PETR4</option>
+                  <option>ABEV3</option>
+                </select>
+              </td>
+              <td class="qtd">
+                <input type="number" class="form-control">
+              </td>
+              <td>
+                100
+              </td>
+              <td>250</td>
+            </tr>
+            <tr>
+              <td class="ativo">
+                <select class="form-control">
+                  <option>BRSF3</option>
+                  <option>ABEV3</option>
+                </select>
+              </td>
+              <td class="qtd">
+                  <input type="number" class="form-control">
+              </td>
+              <td>
+                100
+              </td>
+              <td>250</td>
+            </tr>
+            <tr>
+              <td class="ativo">
+                <select class="form-control">
+                  <option>BRSF3</option>
+                  <option>ABEV3</option>
+                </select>
+              </td>
+              <td class="qtd">
+                  <input type="number" class="form-control">
+              </td>
+              <td>
+                100
+              </td>
+              <td>250</td>
+            </tr>
+            <tr>
+              <td>Total</td>
+              <td></td>
+              <td></td>
+              <td>550</td>
+            </tr>
+          </tbody>
+        </table>
       </nb-card-body>
     </nb-card>
-  </div>
-
-  <div class="col-lg-6">
-    <nb-card>
-      <nb-card-header>Input Styles</nb-card-header>
-      <nb-card-body>
-        <div class="input-group input-group-border-only">
-          <input type="text" placeholder="Border Only" class="form-control"/>
-        </div>
-        <div class="input-group">
-          <input type="text" placeholder="Default Input" class="form-control">
-        </div>
-        <div class="input-group input-group-fill-only">
-          <input type="text" placeholder="Fill Only" class="form-control">
-        </div>
-      </nb-card-body>
-    </nb-card>
-
-    <nb-card>
-      <nb-card-header>Validation States</nb-card-header>
-      <nb-card-body>
-        <div class="form-group">
-          <input type="text" placeholder="Input with Success" class="form-control form-control-success">
-        </div>
-        <div class="form-group">
-          <input type="text" placeholder="Input with Warning" class="form-control form-control-warning">
-        </div>
-        <div class="form-group">
-          <input type="text" placeholder="Input with Danger" class="form-control form-control-danger">
-        </div>
-        <div class="form-group validation-checkboxes row">
-          <nb-checkbox status="success" class="col-sm-4">Checkbox with Success</nb-checkbox>
-          <nb-checkbox status="warning" class="col-sm-4">Checkbox with Warning</nb-checkbox>
-          <nb-checkbox status="danger" class="col-sm-4">Checkbox with Danger</nb-checkbox>
-        </div>
-        <div class="form-group has-success">
-          <input type="text" placeholder="Input with Success Icon" class="form-control form-control-success">
-        </div>
-        <div class="form-group has-warning">
-          <input type="text" placeholder="Input with Warning Icon" class="form-control form-control-warning">
-        </div>
-        <div class="form-group has-danger">
-          <input type="text" placeholder="Input with Danger Icon" class="form-control form-control-danger">
-        </div>
-      </nb-card-body>
-    </nb-card>
-
-    <nb-card>
-      <nb-card-header>Checkboxes & Radios</nb-card-header>
-      <nb-card-body>
-        <div class="row demo-checkboxes-radio">
-          <div class="demo-checkboxes col-sm-4">
-            <nb-checkbox>Checkbox 1</nb-checkbox>
-            <nb-checkbox [value]="true">Checkbox 2</nb-checkbox>
-
-            <div class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" id="b-checkbox">
-              <label class="custom-control-label" for="b-checkbox">Bootstrap Checkbox</label>
-            </div>
-          </div>
-          <div class="demo-radio col-sm-4">
-            <label class="custom-control custom-radio">
-              <input type="radio" class="custom-control-input" name="customRadio">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description">Radio 1</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input type="radio" class="custom-control-input" name="customRadio" checked>
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description">Radio 2</span>
-            </label>
-            <label class="custom-control custom-radio">
-              <input type="radio" class="custom-control-input" name="customRadio">
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description">Radio 3</span>
-            </label>
-          </div>
-          <div class="demo-disabled-checkbox-radio col-sm-4">
-            <nb-checkbox disabled>Disabled Checkbox</nb-checkbox>
-            <label class="custom-control custom-radio">
-              <input type="radio" class="custom-control-input" disabled>
-              <span class="custom-control-indicator"></span>
-              <span class="custom-control-description">Disabled Radio</span>
-            </label>
-          </div>
-        </div>
-      </nb-card-body>
-    </nb-card>
-
-    <nb-card>
-      <nb-card-body class="demo-rating">
-        <span class="rating-header">Rating</span>
-        <div>
-          <ngb-rating [(rate)]="starRate" max=5>
-            <ng-template let-fill="fill">
-              <span class="star fill" [class.filled]="fill === 100">
-                <i class="ion-android-star" *ngIf="fill === 100"></i>
-                <i class="ion-android-star-outline" *ngIf="fill !== 100"></i>
-              </span>
-            </ng-template>
-          </ngb-rating>
-          <span class="current-rate">{{ starRate }}</span>
-        </div>
-        <div>
-          <ngb-rating [(rate)]="heartRate" max=5>
-            <ng-template let-fill="fill">
-              <span class="star fill" [class.filled]="fill === 100">
-                <i class="ion-ios-heart" *ngIf="fill === 100"></i>
-                <i class="ion-ios-heart-outline" *ngIf="fill !== 100"></i>
-              </span>
-            </ng-template>
-          </ngb-rating>
-          <span class="current-rate">{{ heartRate }}</span>
-        </div>
-      </nb-card-body>
-    </nb-card> -->
-  </div>
 </div>
+
